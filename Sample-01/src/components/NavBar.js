@@ -26,6 +26,7 @@ const NavBar = () => {
     user,
     isAuthenticated,
     loginWithRedirect,
+    loginWithPopup,
     logout,
   } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
@@ -73,7 +74,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithRedirect()}
+                    onClick={() => loginWithPopup()}
                   >
                     Log in
                   </Button>
